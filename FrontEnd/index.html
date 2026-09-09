@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cuota Mensual</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="card">
+        <h1>Calculadora de Cuota Mensual</h1>
+
+        <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+        </div>
+
+        <div class="campo">
+            <label for="prestamo">Préstamo</label>
+            <input type="number" id="prestamo">
+        </div>
+
+        <div class="campo">
+            <label for="meses">Meses</label>
+            <input type="number" id="meses">
+        </div>
+
+        <div class="campo">
+            <label for="interes">Interés</label>
+            <input type="number" id="interes" step="0.01">
+        </div>
+
+        <div class="acciones">
+            <button id="btnCalcular">Calcular cuota</button>
+            <button id="btnMostrar">Mostrar préstamos</button>
+        </div>
+
+        <textarea id="resultado" rows="6" readonly></textarea>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
